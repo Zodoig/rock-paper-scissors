@@ -168,6 +168,7 @@ h1 {
 
 .play-again-btn {
     order: 3;
+    margin-top: 0;
 }
 
 
@@ -316,5 +317,9 @@ h1 {
         max-width: 30rem;
         width: 16rem;
         padding-left: 6rem;
+    }
+
+    .score {
+        font-size: 1rem;
     }
 }
