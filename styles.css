@@ -65,7 +65,7 @@ main {
     grid-column: 1 / span 2; 
     justify-self: center;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 2.1rem;
 }
 
 .score {
