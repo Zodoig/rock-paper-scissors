@@ -1,0 +1,319 @@
+* {
+    font-family: "Dosis", sans-serif;
+}
+
+body {
+    background-color: rgb(99, 89, 89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 50%;
+    max-width: 40rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100vh;
+}
+
+.play-button, .confirm-button, .play-again-btn {
+    font-size: 3rem;
+    align-self: center;
+    margin-top: 4rem;
+    background-color: black;
+    color: white;
+    border: 0.3rem solid gray;
+}
+
+.play-button:hover, .confirm-button:hover, .play-again-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 5px rgb(147, 63, 63);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.game-window {
+    width: 100vw;  
+    height: 100vh;
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px; 
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.score-board {
+    font-size: 2rem;
+    grid-row: 1;
+    grid-column: 1 / span 2; 
+    justify-self: center;
+    font-weight: 600;
+}
+
+.score {
+    border: 0.3rem dashed rgb(242, 120, 76);
+    display: inline;
+    padding: 1rem;
+    color: rgb(242, 120, 76);
+}
+
+.computer {
+    height: 15rem;
+    max-width: 15rem;
+    justify-self: end;
+}
+
+.table-top {
+    height: auto; 
+    background-image: url('images/large-table.jpg');
+    background-size: contain; /* Ensure the entire image is visible */
+    background-position: top center;
+    background-repeat: no-repeat; 
+    width: 100%; /* Allow the container to scale with the viewport */
+    max-width: 1000px; /* Set a maximum width if needed */
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio of the background image */
+    position: relative; /* Relative positioning for child elements */
+    margin: 0 auto; /* Center the container horizontally */
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.speech-bubble {
+    height: 15rem; 
+    background-size: contain; 
+    background-position: top center;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0;
+    display: inline-block;
+    width: 300px;
+    justify-self:baseline;
+    display: none;
+}
+
+.speech-bubble > p {
+    padding-top: 3rem;
+    font-size: 1.6rem;
+    padding-left: 3.5rem;
+    width: 200px;
+    display: none;
+}
+
+.rppItem {
+    height: 5rem;
+    margin-bottom: 10rem;
+}
+
+.rppItem:hover {
+    transform: scale(1.5);
+}
+
+.rPPBox {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 2rem;
+}
+
+.button-div {
+    display: flex;
+    width: 100%;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-button {
+   display: none;
+   margin-top: 0;
+}
+
+h1 {
+    justify-self: center;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.you-win-msg{
+    color: darkgreen;
+}
+
+.you-lose-msg {
+    color:darkred;
+}
+
+.its-a-draw-msg {
+    color: coral;
+}
+
+.play-again-btn {
+    order: 3;
+}
+
+
+
+@media (max-width: 1750px) {
+    .rppItem {
+        height: 5rem;
+        padding-bottom: 10rem;  
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.6);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+        margin-top: 3rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    .rppItem {
+        height: 4rem;
+        padding-bottom: 10rem; 
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.6);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 752px) {
+    .rppItem {
+        height: 4rem;
+        padding-bottom: 10rem;  
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.6);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .rppItem {
+        height: 3rem;
+        padding-bottom: 10rem;   
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.6);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 630px) {
+    .rppItem {
+        height: 3rem;
+        padding-bottom: 10rem; 
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.6);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-top: 0;
+    }
+
+    .logo {
+        max-width: 50%;
+        max-width: 30rem;
+        width: 20rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .rppItem {
+        height: 3rem;
+        padding-bottom: 9rem;
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.4);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-top: 0;
+    }
+
+    .logo {
+        max-width: 50%;
+        max-width: 20rem;
+        width: 16rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .rppItem {
+        height: 3rem;
+        padding-bottom: 9rem;
+        padding-top: 0;
+    }
+    
+    .rppItem:hover {
+        transform: scale(1.4);
+    }
+    
+    .rPPBox {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-top: 0;
+    }
+
+    .logo {
+        max-width: 100%;
+        max-width: 30rem;
+        width: 16rem;
+        padding-left: 6rem;
+    }
+}
