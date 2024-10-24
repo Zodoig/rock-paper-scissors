@@ -84,14 +84,14 @@ main {
 .table-top {
     height: auto; 
     background-image: url('images/large-table.jpg');
-    background-size: contain; /* Ensure the entire image is visible */
+    background-size: contain; 
     background-position: top center;
     background-repeat: no-repeat; 
-    width: 100%; /* Allow the container to scale with the viewport */
-    max-width: 1000px; /* Set a maximum width if needed */
-    aspect-ratio: 4 / 3; /* Maintain aspect ratio of the background image */
-    position: relative; /* Relative positioning for child elements */
-    margin: 0 auto; /* Center the container horizontally */
+    width: 100%; 
+    max-width: 1000px; 
+    aspect-ratio: 4 / 3; 
+    position: relative; 
+    margin: 0 auto; 
     grid-column: span 2;
     display: flex;
     flex-direction: column;
